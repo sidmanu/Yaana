@@ -83,6 +83,7 @@ yaana_init_procfs(void)
 	yn_info->data = kmalloc(1024, GFP_KERNEL);
 	
 	//TODO create & add fns for yn_cfg_params 
+	printk("<3> Initialized procfs successfully");
 	
 	return ret_val;	
 
@@ -93,6 +94,7 @@ cleanup:
 	if (yn_main_dir) 
 		remove_proc_entry("yaana", NULL);
 	
+	printk("<1> Initializing procfs FAILED");
 	return ret_val;	
 }
 

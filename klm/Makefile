@@ -11,6 +11,7 @@ obj-m += yaana.o
 ##comprises of
 yaana-y := \
 	yaana_main.o \
+	yaana_proc.o \
 	yaana_dev.o
 
 ##include local header files
