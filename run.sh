@@ -12,9 +12,9 @@ make
 KERNEL_PATH=/lib/modules/(uname -r)
 
 # Link to linux module directory and update modules
-ln -s $(PWD)/yana.ko $(KERNEL_PATH)/ -f
+ln -s $(PWD)/yaana.ko $(KERNEL_PATH)/ -f
 depmod -a
 
 # Search for module and load it
-modprobe yana
+modprobe yaana
 

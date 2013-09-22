@@ -5,13 +5,13 @@
 WARN := -W -Wall -Wstrict-prototypes 
 KERNEL_BUILD_PATH := /lib/modules/$(shell uname -r)/build
 
-##final yana.ko to be built
-obj-m += yana.o 
+##final yaana.ko to be built
+obj-m += yaana.o 
 
 ##comprises of
-yana-y := \
-	yana_main.o \
-	yana_dev.o
+yaana-y := \
+	yaana_main.o \
+	yaana_dev.o
 
 ##include local header files
 ccflags-y := -I$(src)
