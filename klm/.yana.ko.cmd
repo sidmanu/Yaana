@@ -1,0 +1,1 @@
+cmd_/ws/C/yana/klm/yana.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.2.0-4-common/scripts/module-common.lds --build-id  -o /ws/C/yana/klm/yana.ko /ws/C/yana/klm/yana.o /ws/C/yana/klm/yana.mod.o
